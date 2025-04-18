@@ -7,11 +7,12 @@ const palindromes = function (str) {
       if(/^[a-zA-Z0-9]$/.test(current)){
           newArr.push(current);
       }
-    })
+    });
     
     for(i = newArr.length -1; i >= 0; i--){
       revArr.push(newArr[i]);
-    }
+    };
+
     for(i = 0; i <= newArr.length -1; i++){
       if(newArr[i].toLowerCase() !== revArr[i].toLowerCase()){
         return false;
